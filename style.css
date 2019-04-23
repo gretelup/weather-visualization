@@ -1,5 +1,5 @@
 body {
-    background-color:#e6f5ff;
+    background-color:#ececec;
 }
 
 h1,
@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3c4f65;
+  color: #385170;
 }
 
 h5,
@@ -18,14 +18,14 @@ h6 {
 
 
 .navbar {
-    background-color: #e6f5ff;
+    /* background-color:#9fd3c7; */
     padding: 0px;
-    border-bottom:2px solid #834c69;
+    border-bottom:2px solid #142d4c;
   }
    
   .navbar .navbar-brand {
     color: white;
-    background-color: #834c69;
+    background-color: #385170;
     padding: 5px;
     margin: 0px;
    
@@ -38,7 +38,7 @@ h6 {
 @media (max-width: 768px) {
 
     .navbar {
-        background-color: #834c69; 
+        background-color: #385170; 
         color: white;  
     }
     .navbar .navbar-nav .nav-link {
