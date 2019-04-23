@@ -1,0 +1,55 @@
+body {
+    background-color:#e6f5ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3c4f65;
+}
+
+h5,
+h6 {
+  text-align: center;
+}
+
+
+.navbar {
+    background-color: #e6f5ff;
+    padding: 0px;
+    border-bottom:2px solid #834c69;
+  }
+   
+  .navbar .navbar-brand {
+    color: white;
+    background-color: #834c69;
+    padding: 5px;
+    margin: 0px;
+   
+  }
+
+.top-buffer { 
+    margin-top:20px; 
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        background-color: #834c69; 
+        color: white;  
+    }
+    .navbar .navbar-nav .nav-link {
+        color:white;
+    }
+    .navbar-light span.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        color: white;
+      }
+      /* This doesn't seem to be working; look into this */
+      button.navbar-toggler.navbar-toggler-right {
+        border-color:rgba(255, 255, 255, 1)
+      }
+}
