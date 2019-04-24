@@ -1,5 +1,6 @@
 body {
     background-color:#ececec;
+
 }
 
 h1,
@@ -23,13 +24,28 @@ h6 {
     border-bottom:2px solid #142d4c;
   }
    
-  .navbar .navbar-brand {
+.navbar .navbar-brand {
     color: white;
     background-color: #385170;
     padding: 5px;
     margin: 0px;
-   
-  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#142d4c;
+}
+
+.navbar-light .navbar-nav .nav-link:hover { 
+    color: white;
+    background-color: #385170;
+} 
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover { 
+    color: white;
+    background-color: #385170;
+}
+
+
 
 .top-buffer { 
     margin-top:20px; 
@@ -39,7 +55,7 @@ h6 {
 
     .navbar {
         background-color: #385170; 
-        color: white;  
+        color: white;
     }
     .navbar .navbar-nav .nav-link {
         color:white;
@@ -49,6 +65,7 @@ h6 {
         color: white;
       }
       /* This doesn't seem to be working; look into this */
+      
       button.navbar-toggler.navbar-toggler-right {
         border-color:rgba(255, 255, 255, 1)
       }

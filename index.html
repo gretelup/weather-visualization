@@ -5,54 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Visualizations</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- NAVIGATION BAR -->
-    <!-- <div id="app" class="container"> -->
-        <nav class="navbar navbar-expand-md navbar-light" >
-            <a class="navbar-brand" href="index.html">Latitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNavDropdown" class="navbar-collapse collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                            Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="Lat_v_Temp.html">Temperature</a>
-                            <a class="dropdown-item" href="Lat_v_Humid.html">Humidity</a>
-                            <a class="dropdown-item" href="Lat_v_Cloud.html">Cloudiness</a>
-                            <a class="dropdown-item" href="Lat_v_Speed.html">Wind Speed</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Comparison.html">Comparison</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Data.html">Data</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    <!-- </div> -->
+    <nav class="navbar navbar-expand-md navbar-light" >
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="Lat_v_Temp.html">Temperature</a>
+                        <a class="dropdown-item" href="Lat_v_Humid.html">Humidity</a>
+                        <a class="dropdown-item" href="Lat_v_Cloud.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Lat_v_Speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- END NAVIGATION BAR -->
-<!-- MAKE SURE WE ARE USING THE RIGHT BREAKPOINT, I.E. THAT IT SHOULDN'T BE SMALL -->
-
     <div class="container">
         <div class="row">
             <!-- Project Description -->
             <div class="col-md-7 py-3">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">Summary: Latitude v. X</h2>
+                        <h2 class="card-title">Weather Observations by Latitude</h2>
                         <hr>
-                        <p class="card-text">Here is a summary of my project</p>
+                        <p class="card-text">The purpose of this project was to determine if there are any observable weather trends as you get closer or futher away from the equator. </p>
+                        <p class="card-text">To do this, I created a python script to visualize the relationship between various weather elements and latitude. First I generated a list of 1500 random latitude and longitude coordinates. Then I created a list of unique cities closest to each coordinate set utilizing the citipy module. Next, I used a series of API calls to the OpenWeatherMap API to generate a dataset of available cities and various weather observations on a given date--March 19, 2019. Finally, utilizing the Matplotlib library, I plotted measurements for four different weather elements--cloudiness, humidity, maximum temperature, and wind speed--versus the city's latitude. Viewing these plots allowed me to make some observations on weather trends based on latitude.
+                        </p>
                     </div>
+                    <a href="Lat_v_Temp.html"><img src="Resources/assets/images/Lat_v_Temp.png" class="card-img-top" alt="Latitude v. Temperature plot"></a>
+
                 </div>
             </div>
             <!-- Links to Graphs -->
@@ -86,8 +86,6 @@
             </div>
         </div>
     </div>
-
-
 
 
     <!-- SCRIPTS -->
