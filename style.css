@@ -1,6 +1,5 @@
 body {
     background-color:#ececec;
-
 }
 
 h1,
@@ -16,7 +15,6 @@ h5,
 h6 {
   text-align: center;
 }
-
 
 .navbar {
     /* background-color:#9fd3c7; */
@@ -45,14 +43,11 @@ h6 {
     background-color: #385170;
 }
 
-
-
 .top-buffer { 
     margin-top:20px; 
 }
 
 @media (max-width: 768px) {
-
     .navbar {
         background-color: #385170; 
         color: white;
@@ -67,5 +62,4 @@ h6 {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         color: white;
       }
-
 }
