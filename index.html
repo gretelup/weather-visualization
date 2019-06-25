@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Visualizations</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-md navbar-light" >
+    <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="index.html">Project Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" href="#">
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -47,11 +52,21 @@
                     <div class="card-body">
                         <h2 class="card-title">Weather Observations by Latitude</h2>
                         <hr>
-                        <p class="card-text">The purpose of this project was to determine if there are any observable weather trends as you get closer to or futher away from the equator. </p>
-                        <p class="card-text">To do this, I created a python script to visualize the relationships between various weather elements and latitude. First I generated a list of 1500 random latitude and longitude coordinates. Then I created a list of unique cities closest to each coordinate set utilizing the citipy module. Next I used a series of API calls to the OpenWeatherMap API to generate a dataset of available cities and various weather observations on a given date--March 19, 2019. Finally, utilizing the Matplotlib library, I plotted measurements for four different weather elements--cloudiness, humidity, maximum temperature, and wind speed--versus the city's latitude. Viewing these plots allowed me to make some observations on weather trends based on latitude.
+                        <p class="card-text">The purpose of this project was to determine if there are any observable
+                            weather trends as you get closer to or futher away from the equator. </p>
+                        <p class="card-text">To do this, I created a python script to visualize the relationships
+                            between various weather elements and latitude. First I generated a list of 1500 random
+                            latitude and longitude coordinates. Then I created a list of unique cities closest to each
+                            coordinate set utilizing the citipy module. Next I used a series of API calls to the
+                            OpenWeatherMap API to generate a dataset of available cities and various weather
+                            observations on a given date--June 25, 2019. Finally, utilizing the Matplotlib library, I
+                            plotted measurements for four different weather elements--cloudiness, humidity, maximum
+                            temperature, and wind speed--versus the city's latitude. Viewing these plots allowed me to
+                            make some observations on weather trends based on latitude.
                         </p>
                     </div>
-                    <a href="Lat_v_Temp.html"><img src="Resources/assets/images/Lat_v_Temp.png" class="card-img-top" alt="Latitude v. Temperature plot"></a>
+                    <a href="Lat_v_Temp.html"><img src="Resources/assets/images/Lat_v_Temp.png" class="card-img-top"
+                            alt="Latitude v. Temperature plot"></a>
 
                 </div>
             </div>
@@ -64,21 +79,25 @@
                         <div class="row">
                             <div class="col-sm-6 py-3">
                                 <h6>Cloudiness</h6>
-                                <a href="Lat_v_Cloud.html"><img src="Resources/assets/images/Lat_v_Cloudiness.png" alt="Latitude v. Cloudiness plot" class="img-thumbnail"></a>
+                                <a href="Lat_v_Cloud.html"><img src="Resources/assets/images/Lat_v_Cloudiness.png"
+                                        alt="Latitude v. Cloudiness plot" class="img-thumbnail"></a>
                             </div>
                             <div class="col-sm-6 py-3">
                                 <h6>Humidity</h6>
-                                <a href="Lat_v_Humid.html"><img src="Resources/assets/images/Lat_v_Humid.png" alt="Latitude v. Humidity plot" class="img-thumbnail"></a>
+                                <a href="Lat_v_Humid.html"><img src="Resources/assets/images/Lat_v_Humid.png"
+                                        alt="Latitude v. Humidity plot" class="img-thumbnail"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 py-3">
                                 <h6>Temperature</h6>
-                                <a href="Lat_v_Temp.html"><img src="Resources/assets/images/Lat_v_Temp.png" alt="Latitude v. Temperature plot" class="img-thumbnail"></a>
+                                <a href="Lat_v_Temp.html"><img src="Resources/assets/images/Lat_v_Temp.png"
+                                        alt="Latitude v. Temperature plot" class="img-thumbnail"></a>
                             </div>
                             <div class="col-sm-6 py-3">
                                 <h6>Wind Speed</h6>
-                                <a href="Lat_v_Speed.html"><img src="Resources/assets/images/Lat_v_Speed.png" alt="Latitude v. Wind Speed plot" class="img-thumbnail"></a>
+                                <a href="Lat_v_Speed.html"><img src="Resources/assets/images/Lat_v_Speed.png"
+                                        alt="Latitude v. Wind Speed plot" class="img-thumbnail"></a>
                             </div>
                         </div>
                     </div>
@@ -89,9 +108,16 @@
 
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
