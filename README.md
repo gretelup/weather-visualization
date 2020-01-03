@@ -1,6 +1,6 @@
 # Weather Visualization
 
-Visualization dashboard for weather analysis.
+Visualization dashboard for weather analysis. Published on GitHub Pages at <https://gretelup.github.io/weather-visualization/>.
 
 ## Table of contents
 
